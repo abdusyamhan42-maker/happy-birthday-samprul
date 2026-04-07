@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎉 SELAMAT ULANG TAHUN! 🎉</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{font-family:Poppins,sans-serif;background:linear-gradient(45deg,#ff6b6b,#4ecdc4,#45b7d1,#f9ca24);background-size:400% 400%;animation:gradientShift 8s ease infinite;height:100vh;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+        @keyframes gradientShift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+        .container{perspective:1000px;}
+        .card{background:rgba(255,255,255,0.95);backdrop-filter:blur(20px);border-radius:30px;padding:50px;text-align:center;box-shadow:0 30px 60px rgba(0,0,0,0.3);animation:cardFloat 3s ease-in-out infinite;max-width:500px;width:90%;margin:0 auto;}
+        @keyframes cardFloat{0%,100%{transform:translateY(0px);}50%{transform:translateY(-20px);}}
+        h1{font-size:4rem;font-weight:700;background:linear-gradient(45deg,#ff6b6b,#4ecdc4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin:20px 0;}
+        p{font-size:1.3rem;color:#333;margin:20px 0;line-height:1.6;}
+        button{background:linear-gradient(45deg,#ff6b6b,#4ecdc4);color:white;border:none;padding:15px 40px;font-size:1.2rem;border-radius:50px;cursor:pointer;margin:20px 0;transition:all 0.3s;}
+        button:hover{transform:translateY(-5px);}
+        @media(max-width:768px){h1{font-size:2.5rem;}.card{padding:30px 20px;}}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>🎉 SELAMAT</h1>
+            <h1>ULANG TAHUN! 🎂</h1>
+            <p>Semoga panjang umur, sehat selalu!</p>
+            <p>Keep coding, keep shining! 💻✨</p>
+            <button onclick="document.body.style.background='linear-gradient(45deg,#00b894,#00cec9)';this.innerHTML='🎊 UDAH JADI! 🎊';">
+                Klik buat Party Mode! 🎈
+            </button>
+            <p style="font-size:1rem;margin-top:30px;color:#666;">
+                Made with ❤️ for [NAMA LU]
+            </p>
+        </div>
+    </div>
+</body>
+</html>
